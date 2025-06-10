@@ -1,10 +1,10 @@
 //DEFINICION DE UNA PROMESA
 const miPromesa = new Promise((resolve, reject) => {
-    const valor = Math.random;
-    if (valor < 0.5){
-        reject("Promesa rechazada");
-    }else{
+    const valor = Math.random();
+    if (valor > 0.5){
         resolve("Promesa cumplida")
+    }else{
+        reject("Promesa rechazada");
     }
 });
 
